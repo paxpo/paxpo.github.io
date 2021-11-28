@@ -1,0 +1,151 @@
+.hidden {
+    display: none;
+}
+
+.fade-in {
+    animation: fadein 0.7s;
+}
+
+@keyframes fadein {
+    from {opacity:0}
+      to {opacity:1}
+}
+
+.fade-out {
+    animation: fadeout 0.7s;
+}
+
+@keyframes fadeout {
+    from {opacity:1}
+      to {opacity:0}
+}
+
+#header {
+    display: grid;
+    height: 5vh;
+    justify-content: right;
+    color: white;
+    user-select: none;
+    text-shadow: 0 2px 5px rgb(0, 0, 0);
+}
+
+#header #city {
+    justify-self: right;
+}
+
+#main {
+    display: grid;
+    height: 90vh;
+    justify-content: center;
+    align-content: center;
+    grid-template-rows: 240px 42px 21px 33%;
+    gap: 30px;
+}
+
+#clock {
+    color: white;
+    justify-self: center;
+    font-size: 180px;
+    font-weight: bold;
+    user-select: none;
+    text-shadow: 0 2px 40px rgb(0, 0, 0);
+}
+
+#loginForm {
+    display: grid;
+    height: 42px;
+    justify-content: center;
+    gap: 10px;
+}
+
+#loginForm #loginInput {
+    color: white;
+    background-color: transparent;
+    font-size: 15px;
+    text-align: center;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color:white;
+    outline: none;
+}
+
+#loginForm #loginInput::placeholder {
+    color: white;
+}
+
+#loginForm #loginInput:focus::placeholder {
+    color: transparent;
+}
+
+#loginForm #loginButton {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: orchid;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 1px 10px rgb(0, 0, 0);
+}
+
+#loginForm #loginButton:active {
+    transform: scale(0.98);
+}
+
+#greeting {
+    font-size: 25px;
+    color: white;
+    user-select: none;
+    text-shadow: 0 2px 20px rgb(0, 0, 0);
+}
+
+#todoForm {
+    display: grid;
+    justify-content: center;
+}
+
+#todoForm #todoInput {
+    color: white;
+    background-color: transparent;
+    width: 250px;
+    font-size: 15px;
+    text-align: center;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color:white;
+    outline: none;
+}
+
+#todoForm #todoInput::placeholder {
+    color: white;
+    text-shadow: 0 2px 5px rgb(0, 0, 0, 0.5);
+}
+
+#todoForm #todoInput:focus::placeholder {
+    color: transparent;
+    text-shadow: none;
+}
+
+#todoList {
+    width: 30vh;
+    justify-self: center;
+    color: white;
+    user-select: none;
+    text-shadow: 0 2px 5px rgb(0, 0, 0);
+}
+
+#todoList p button {
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: pink;
+    margin-right: 10px;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+#todoList p button:active {
+    transform: scale(0.95);
+}
